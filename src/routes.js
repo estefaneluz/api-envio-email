@@ -4,4 +4,7 @@ const { subscribe } = require('./controllers/subscribers')
 
 const routes = express();
 
+routes.post('/inscricao', subscribe);
+routes.post('/email', sendEmail);
+
 module.exports = routes;
